@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Pokémon Explorer</h1>
+        <p>Explore Pokémon using a public REST API</p>
+
+        <section class="search-section">
+            <form id="search-form">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Enter Pokémon name or ID"
+                >
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <p id="loading" hidden>Loading Pokémon...</p>
+        <p id="error" hidden></p>
+
+        <section class="pokemon-section">
+            <h2>Pokémon List</h2>
+            <div id="pokemon-list"></div>
+        </section>
+
+        <section class="details-section">
+            <h2>Pokémon Details</h2>
+            <div id="pokemon-details">
+                Select a Pokémon to view details.
+            </div>
+        </section>
+
+        <section class="compare-section">
+            <h2>Two Pokémon Loaded in Parallel</h2>
+            <div id="compare-list"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
